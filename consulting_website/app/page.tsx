@@ -300,7 +300,7 @@ export default function Home() {
         <section id="contact" className="py-32 px-6 bg-slate-950">
           <div className="mx-auto max-w-2xl text-center">
             <span className="inline-block mb-6 px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-slate-400 tracking-widest uppercase">
-              Pricing starting at $125/hour
+              Pricing starting at $110/hour
             </span>
             <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-5">
               Let&apos;s build something
