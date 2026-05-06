@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import ProjectCard from "./ProjectCard";
 
 export const metadata = {
   title: "How I Create Value — Drezdan Analytics LLC",
@@ -147,76 +148,10 @@ const verticals: Vertical[] = [
 
 // ── COMPONENTS ────────────────────────────────────────────────────────────────
 
-function ProjectCard({ project, isMiddle = false }: { project: Project; isMiddle?: boolean }) {
-  if (project.bullets) {
-    return (
-      <div className="rounded-2xl border border-slate-200/70 overflow-hidden shadow-sm shadow-slate-100/80 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-200/60 hover:border-slate-200 transition-all duration-200 bg-white">
-        <div className="px-7 pt-6 pb-2">
-          <h3 className="font-semibold text-[15px] [color:#26251e]">{project.title}</h3>
-        </div>
-        <ul className="px-7 pb-7 flex flex-col gap-3">
-          {project.bullets.map((b) => (
-            <li key={b} className="flex items-start gap-2.5">
-              <span className="mt-[5px] w-1.5 h-1.5 rounded-full flex-shrink-0 [background-color:#1f8a65]" />
-              <span className="text-[13px] [color:#5a5852] leading-[1.5]">{b}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-
-  return (
-    // row-span-4 + subgrid: this card spans all 4 shared row tracks so
-    // Context, Solution, and Outcome align across sibling cards.
-    <div className={`group row-span-4 grid [grid-template-rows:subgrid] rounded-2xl border border-slate-200/70 overflow-hidden transition-all duration-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-200/60 hover:border-slate-200 ${isMiddle ? "shadow-md shadow-slate-200/50" : "shadow-sm shadow-slate-100/80"}`}>
-      {/* Row 1 — Title */}
-      <div className="px-7 pt-6 pb-0 bg-white">
-        <h3 className="font-semibold text-[15px] [color:#26251e]">{project.title}</h3>
-      </div>
-
-      {/* Row 2 — Context */}
-      <div className="px-7 pb-0 bg-white">
-        <p className="text-[11px] font-bold tracking-[0.18em] uppercase [color:#807d72] mb-1">Context</p>
-        <p className="text-[13px] [color:#807d72] leading-[1.5]">{project.context}</p>
-      </div>
-
-      {/* Row 3 — Solution */}
-      <div className="px-7 pb-0 bg-white border-t border-slate-100">
-        <p className="text-[11px] font-bold tracking-[0.18em] uppercase [color:#807d72] mb-1">Solution</p>
-        <p className="text-[13px] [color:#5a5852] leading-[1.5]">{project.solution}</p>
-      </div>
-
-      {/* Row 4 — Outcome */}
-      <div className="px-7 pt-3 pb-5 border-t [background:linear-gradient(to_bottom,#a9d3ac,#9fc9a2)] [border-color:#9fc9a2] group-hover:[filter:brightness(0.95)_saturate(1.1)] transition-[filter] duration-200">
-        <p className="text-[11px] font-bold tracking-[0.12em] uppercase [color:#807d72] mb-1">Outcome</p>
-        {project.link ? (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-[22px] font-black leading-[1.1] mb-1 [color:#1f8a65] hover:underline"
-          >
-            {project.metric}
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-            </svg>
-          </a>
-        ) : (
-          <p className="text-[22px] font-black leading-[1.1] mb-1 [color:#1f8a65]">{project.metric}</p>
-        )}
-        {project.outcome && (
-          <p className="text-xs [color:#5a5852] leading-[1.45]">{project.outcome}</p>
-        )}
-      </div>
-    </div>
-  );
-}
-
 function VerticalSection({ vertical }: { vertical: Vertical }) {
   const isThree = vertical.projects.length === 3;
   return (
-    <section id={vertical.id} className={`py-16 px-6 ${vertical.sectionBg}`}>
+    <section id={vertical.id} className={`py-10 md:py-16 px-6 ${vertical.sectionBg}`}>
       <div className="mx-auto max-w-6xl">
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-3">
