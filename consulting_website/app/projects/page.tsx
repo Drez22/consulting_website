@@ -72,11 +72,11 @@ const verticals: Vertical[] = [
     skills: ["Python", "APIs", "Claude", "Codex", "HubSpot"],
     projects: [
       {
-        title: "Grant Lead Generation Engine",
-        context: "Non-profit organization manually searched for grants across fragmented sources, missing opportunities and wasting hours weekly.",
-        solution: "Built an automated pipeline that aggregates grant data, enriches eligibility, and scores relevance using embeddings + LLM classification.",
-        metric: "98% less irrelevant grant review",
-        outcome: "Surfaced only the top ~25 high-fit opportunities from 1,800 active grants each week.",
+        title: "Lead Generation Engine",
+        context: "Organization manually searched for leads across fragmented sources, missing opportunities and wasting hours weekly.",
+        solution: "Built an automated pipeline that aggregates lead data, enriches eligibility, and scores relevance using embeddings + LLM classification.",
+        metric: "98% less irrelevant lead review",
+        outcome: "Surfaced only the top ~25 high-fit opportunities from 1,800 active leads each week.",
       },
       {
         title: "Campaign Creation & Automation",
