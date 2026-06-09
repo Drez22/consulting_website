@@ -117,9 +117,9 @@ export default function Home() {
                   sub: "Predict deal outcomes with high accuracy using live pipeline data.",
                 },
                 {
-                  title: "Grant Lead Generation Engine",
+                  title: "Lead Generation Engine",
                   body: "Surface only high-fit opportunities from thousands of options.",
-                  sub: "Eliminate noise and focus only on A-tier grants worth pursuing.",
+                  sub: "Eliminate noise and focus only on A-tier leads worth pursuing.",
                 },
                 {
                   title: "Real Estate Portfolio Platform",
