@@ -37,7 +37,7 @@ export default function LandingNavbar() {
           href="https://calendly.com/drezdan-drezdandale"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-medium hover:bg-slate-700 transition-colors"
+          className="px-3 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-medium hover:bg-slate-700 transition-colors whitespace-nowrap"
         >
           Book Assessment Call
         </a>
