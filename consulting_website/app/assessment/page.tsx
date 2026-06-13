@@ -20,13 +20,11 @@ const whatIReview = [
   "Embedded code, custom logic, and manual workflows",
   "KPI definitions and metric inconsistencies",
   "Historical reporting gaps",
-  "Source tables, joins, and known data issues",
   "Documentation and ownership gaps",
   "AI-readiness constraints",
 ];
 
 const whatYouGet = [
-  "Current-state reporting summary",
   "Key risks in the existing reporting model",
   "Historical reporting gap assessment",
   "Reporting architecture recommendation & roadmap",
@@ -211,7 +209,7 @@ export default function Assessment() {
               ))}
             </div>
             <p className="text-[14px] [color:#5a5852] leading-relaxed max-w-2xl mb-8">
-              <span className="font-semibold [color:#26251e]">Pricing:</span> $10,000–$18,000 depending on reporting complexity. Final scope and price are confirmed before the engagement begins.
+              <span className="font-semibold [color:#26251e]">Pricing:</span> $14,000. Scope confirmed before the engagement begins.
             </p>
 
             {/* Week-by-week timeline */}
