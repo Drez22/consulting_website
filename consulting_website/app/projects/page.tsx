@@ -224,15 +224,15 @@ export default function Projects() {
       <Navbar />
       <main className="pt-16">
         {/* ── HERO ──────────────────────────────────────────────────── */}
-        <section className="py-20 px-6 bg-gradient-to-b from-slate-50 to-white">
+        <section className="py-14 md:py-20 px-6 bg-gradient-to-b from-slate-50 to-white">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-4 text-xs font-semibold tracking-[0.2em] uppercase [color:#807d72]">
               How I Create Value
             </p>
-            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.05] mb-5">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-5">
               A skillset that drives outcomes
             </h1>
-            <p className="mx-auto max-w-xl text-lg [color:#5a5852] leading-relaxed">
+            <p className="mx-auto max-w-xl text-base sm:text-lg [color:#5a5852] leading-relaxed">
               I combine data analytics, automation, product development, and the ability to translate complexity to build systems that surface insights and create compounding returns.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -255,9 +255,9 @@ export default function Projects() {
         ))}
 
         {/* ── CTA ───────────────────────────────────────────────────── */}
-        <section className="py-20 px-6 bg-slate-950">
+        <section className="py-16 md:py-20 px-6 bg-slate-950">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
               Let&apos;s find the highest leverage problem in your business
             </h2>
 <a

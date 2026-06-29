@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <main className="pt-16">
         {/* ── HERO ──────────────────────────────────────────────────── */}
-        <section className="py-32 px-6 bg-gradient-to-b from-slate-50 to-white">
+        <section className="py-20 md:py-32 px-6 bg-gradient-to-b from-slate-50 to-white">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-5 text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
               Data, Systems, & Automation Consultant
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </section>
         {/* ── PROBLEMS I SOLVE ──────────────────────────────────────── */}
-        <section id="problems" className="py-24 px-6 bg-slate-950">
+        <section id="problems" className="py-16 md:py-24 px-6 bg-slate-950">
           <div className="mx-auto max-w-5xl">
             <p className="mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">
               Sound Familiar?
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
         </section>
         {/* ── SERVICES OVERVIEW ─────────────────────────────────────── */}
-        <section id="services" className="py-24 px-6 bg-slate-50">
+        <section id="services" className="py-16 md:py-24 px-6 bg-slate-50">
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
               Services
@@ -147,7 +147,7 @@ export default function Home() {
           </div>
         </section>
         {/* ── PRINCIPLES ────────────────────────────────────────────── */}
-        <section id="principles" className="py-24 px-6 bg-slate-950">
+        <section id="principles" className="py-16 md:py-24 px-6 bg-slate-950">
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-slate-500">
               Principles
@@ -203,7 +203,7 @@ export default function Home() {
           </div>
         </section>
         {/* ── HOW I WORK ────────────────────────────────────────────── */}
-        <section id="process" className="py-24 px-6 bg-white">
+        <section id="process" className="py-16 md:py-24 px-6 bg-white">
           <div className="mx-auto max-w-5xl">
             <p className="mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
               How I Work
@@ -250,7 +250,7 @@ export default function Home() {
           </div>
         </section>
         {/* ── FINAL CTA ─────────────────────────────────────────────── */}
-        <section id="contact" className="py-32 px-6 bg-slate-950">
+        <section id="contact" className="py-20 md:py-32 px-6 bg-slate-950">
           <div className="mx-auto max-w-2xl text-center">
             <span className="inline-block mb-6 px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-slate-400 tracking-widest uppercase">
               Pricing starting at $150/hour

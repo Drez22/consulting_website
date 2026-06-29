@@ -1,7 +1,7 @@
 import LandingNavbar from "../components/LandingNavbar";
 
 export const metadata = {
-  title: "Enterprise Reporting Foundation Assessment — Drezdan Analytics LLC",
+  title: "Data Foundation Assessment — Drezdan Analytics LLC",
   description:
     "A focused diagnostic that identifies where reporting logic is fragmented, what risks that creates, and what data foundation should be built first.",
 };
@@ -34,6 +34,14 @@ const whatYouGet = [
   "Executive Review Session",
 ];
 
+const valueToOrg = [
+  "Reduce time spent reconciling numbers across teams, dashboards, and spreadsheets",
+  "Align data, finance, operations, and leadership around shared KPI definitions",
+  "Prioritize the first high-value data foundation pilot instead of guessing what to build next",
+  "Surface hidden logic, ownership gaps, and manual workflows before they become larger risks",
+  "Give leadership a clearer path from fragmented reporting to trusted data infrastructure",
+];
+
 // ── COMPONENTS ────────────────────────────────────────────────────────────────
 
 function BulletList({ items }: { items: string[] }) {
@@ -58,7 +66,7 @@ export default function Assessment() {
       <main className="pt-16">
 
         {/* ── HERO ──────────────────────────────────────────────────── */}
-        <section className="py-20 px-6 bg-gradient-to-b from-slate-50 to-white">
+        <section className="py-14 md:py-20 px-6 bg-gradient-to-b from-slate-50 to-white">
           <div className="mx-auto max-w-4xl">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-bold tracking-[0.2em] uppercase [color:#1f8a65]">
@@ -67,7 +75,7 @@ export default function Assessment() {
               <span className="w-8 h-px bg-slate-200" />
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-5 max-w-3xl">
-              Enterprise Reporting Foundation Assessment
+              Data Foundation Assessment
             </h1>
             <p className="text-[15px] [color:#5a5852] leading-relaxed mb-8 max-w-xl">
               <em>Built from hands-on work with lending and finance teams where reporting logic lived across dashboards, SQL, spreadsheets, and undocumented workflows.</em>
@@ -118,16 +126,16 @@ export default function Assessment() {
           <div className="mx-auto max-w-4xl">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-bold tracking-[0.2em] uppercase [color:#807d72]">
-                The Offer
+                The Solution
               </span>
               <span className="w-8 h-px bg-slate-200" />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold leading-tight mb-5 max-w-2xl [color:#26251e]">
-              A focused diagnostic — not a vague audit.
+              A focused diagnostic - not a vague audit.
             </h2>
             <div className="max-w-2xl space-y-4">
               <p className="text-[15px] [color:#5a5852] leading-relaxed">
-                The Enterprise Reporting Foundation Assessment identifies where reporting logic is fragmented, what risks that creates, and what data foundation should be built first.
+                The <strong>Data Foundation Assessment</strong> identifies where reporting logic is fragmented, what risks that creates, and what data foundation should be built first.
               </p>
               <p className="text-[15px] [color:#5a5852] leading-relaxed">
                 This is an audit of how reporting actually works today and what is preventing the business from getting trusted answers faster.
@@ -136,10 +144,10 @@ export default function Assessment() {
           </div>
         </section>
 
-        {/* ── WHAT I REVIEW / WHAT YOU GET ──────────────────────────── */}
+        {/* ── WHAT I REVIEW / WHAT YOU GET / VALUE ─────────────────── */}
         <section id="scope" className="py-16 px-6 bg-slate-50">
-          <div className="mx-auto max-w-4xl">
-            <div className="grid sm:grid-cols-2 gap-5">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
               {/* What I Review */}
               <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm shadow-slate-100/80 overflow-hidden">
@@ -163,6 +171,17 @@ export default function Assessment() {
                 </div>
               </div>
 
+              {/* Value to Your Organization */}
+              <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm shadow-slate-100/80 overflow-hidden">
+                <div className="px-7 pt-6 pb-3 border-b border-slate-100">
+                  <p className="text-[11px] font-bold tracking-[0.18em] uppercase [color:#807d72] mb-1">Value</p>
+                  <h3 className="font-semibold text-[15px] [color:#26251e]">Value to Your Organization</h3>
+                </div>
+                <div className="px-7 py-5">
+                  <BulletList items={valueToOrg} />
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
@@ -177,7 +196,7 @@ export default function Assessment() {
               <span className="w-8 h-px bg-slate-200" />
             </div>
             {/* Outcome card — green gradient matching project cards */}
-            <div className="rounded-2xl border [border-color:#9fc9a2] [background:linear-gradient(to_bottom,#a9d3ac,#9fc9a2)] px-8 py-8 max-w-3xl">
+            <div className="rounded-2xl border [border-color:#9fc9a2] [background:linear-gradient(to_bottom,#a9d3ac,#9fc9a2)] px-5 py-6 md:px-8 md:py-8 max-w-3xl">
               <p className="text-[11px] font-bold tracking-[0.12em] uppercase [color:#807d72] mb-3">Leadership gets a clear answer to:</p>
               <p className="text-xl sm:text-2xl font-bold leading-snug [color:#1f8a65]">
                 &ldquo;What reporting foundation needs to exist so we can trust our numbers, recreate history, reduce manual work, and build future AI or automation on solid ground?&rdquo;
@@ -199,7 +218,7 @@ export default function Assessment() {
               <span className="w-8 h-px bg-slate-200" />
             </div>
             <div className="flex flex-wrap gap-3 mb-6">
-              {["Fixed-scope", "2–3 weeks", "Roadmap included"].map((tag) => (
+              {["Fixed-scope", "3 weeks", "Roadmap included"].map((tag) => (
                 <span
                   key={tag}
                   className="px-3 py-1 rounded-full text-[13px] font-medium [background-color:#9fbbe0] [color:#26251e]"
@@ -208,8 +227,11 @@ export default function Assessment() {
                 </span>
               ))}
             </div>
+            <p className="text-[14px] [color:#5a5852] leading-relaxed max-w-2xl mb-1">
+              <span className="font-semibold [color:#26251e]">Pricing:</span> $14,000.
+            </p>
             <p className="text-[14px] [color:#5a5852] leading-relaxed max-w-2xl mb-8">
-              <span className="font-semibold [color:#26251e]">Pricing:</span> $14,000. Scope confirmed before the engagement begins.
+              Scope confirmed before the engagement begins.
             </p>
 
             {/* Week-by-week timeline */}
@@ -245,12 +267,12 @@ export default function Assessment() {
         </section>
 
         {/* ── CTA ───────────────────────────────────────────────────── */}
-        <section className="py-24 px-6 bg-slate-950">
+        <section className="py-16 md:py-24 px-6 bg-slate-950">
           <div className="mx-auto max-w-2xl text-center">
             <span className="inline-block mb-5 px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-slate-400 tracking-widest uppercase">
               Ready to discuss?
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
               Book a 30-minute assessment call
             </h2>
 
