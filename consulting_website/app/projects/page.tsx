@@ -33,7 +33,7 @@ const verticals: Vertical[] = [
   {
     id: "product-development",
     number: "01",
-    name: "Custom Product Builds",
+    name: "Decision Systems & Custom Products",
     taglineLabel: "You need me when...",
     tagline: "Your team needs internal tooling | AI could automate complex work | Data is unstructured and unusable",
     sectionBg: "bg-slate-50",
