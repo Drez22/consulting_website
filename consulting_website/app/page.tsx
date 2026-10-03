@@ -122,9 +122,9 @@ export default function Home() {
                   sub: "Eliminate noise and focus only on A-tier leads worth pursuing.",
                 },
                 {
-                  title: "Real Estate Portfolio Platform",
-                  body: "Turn property portfolios into lead-generating platforms.",
-                  sub: "Capture demand, showcase listings, and own your digital presence.",
+                  title: "Data Architecture & BI Modernization",
+                  body: "Build a data foundation the business can actually trust.",
+                  sub: "Modernize reporting infrastructure, centralize business logic, and create scalable data models that power consistent analytics.",
                 },
               ].map((s) => (
                 <a
