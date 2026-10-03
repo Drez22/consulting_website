@@ -42,7 +42,7 @@ export default function Home() {
                 href="#services"
                 className="px-8 py-3.5 rounded-xl border border-slate-200 text-slate-700 text-sm font-medium hover:border-slate-400 transition-colors"
               >
-                View Services
+                How I Create Value
               </a>
             </div>
           </div>
@@ -101,20 +101,20 @@ export default function Home() {
         <section id="services" className="py-16 md:py-24 px-6 bg-slate-50">
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
-              Services
+              How I Create Value
             </p>
             <h2 className="mb-4 text-3xl sm:text-4xl font-bold leading-tight max-w-lg">
               Systems I Build
             </h2>
             <p className="mb-14 text-slate-500 leading-relaxed max-w-xl">
-              I help companies design, build, and operationalize systems that power smarter decisions and scalable revenue.
+              I design and build data products, decision systems, and automations that turn complex business processes into scalable infrastructure.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
                 {
-                  title: "Predictive Deal Closing Model",
-                  body: "Know what will close before the month ends.",
-                  sub: "Predict deal outcomes with high accuracy using live pipeline data.",
+                  title: "NPV Decision Platform",
+                  body: "Model complex portfolio outcomes in seconds.",
+                  sub: "Evaluate recovery strategies, compare scenarios, and make faster asset-level decisions from one centralized platform.",
                 },
                 {
                   title: "Lead Generation Engine",
