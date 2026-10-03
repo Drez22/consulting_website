@@ -33,7 +33,7 @@ export default function LandingNavbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
-          {[["Problem", "#problem"], ["Scope", "#scope"], ["Outcome", "#outcome"], ["Structure", "#structure"]].map(([label, href]) => (
+          {[["Problem", "#problem"], ["Outcome", "#outcome"], ["Scope", "#scope"], ["Structure", "#structure"]].map(([label, href]) => (
             <a
               key={label}
               href={href}
@@ -71,8 +71,8 @@ export default function LandingNavbar() {
         <div className="md:hidden bg-white border-t border-slate-100 px-6 py-5 flex flex-col gap-4">
           {[
             ["Problem", "#problem"],
-            ["Scope", "#scope"],
             ["Outcome", "#outcome"],
+            ["Scope", "#scope"],
             ["Structure", "#structure"],
           ].map(([label, href]) => (
             <a

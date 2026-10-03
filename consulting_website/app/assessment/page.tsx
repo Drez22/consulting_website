@@ -227,8 +227,30 @@ export default function Assessment() {
           </div>
         </section>
 
+        {/* ── THE OUTCOME ───────────────────────────────────────────── */}
+        <section id="outcome" className="py-16 px-6 bg-gradient-to-b from-slate-50 to-white">
+          <div className="mx-auto max-w-4xl">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-xs font-bold tracking-[0.2em] uppercase [color:#807d72]">
+                The Outcome
+              </span>
+              <span className="w-8 h-px bg-slate-200" />
+            </div>
+            {/* Outcome card — green gradient matching project cards */}
+            <div className="rounded-2xl border [border-color:#9fc9a2] [background:linear-gradient(to_bottom,#a9d3ac,#9fc9a2)] px-5 py-6 md:px-8 md:py-8 max-w-3xl">
+              <p className="text-[11px] font-bold tracking-[0.12em] uppercase [color:#807d72] mb-3">Leadership gets a clear answer to:</p>
+              <p className="text-xl sm:text-2xl font-bold leading-snug [color:#1f8a65]">
+                &ldquo;What foundation needs to exist so we can trust our numbers, recreate history, reduce manual work, and build AI or automation on solid ground?&rdquo;
+              </p>
+              <p className="mt-4 text-[13px] [color:#5a5852] leading-[1.5]">
+                The goal is to identify the first practical layer the business needs to move from fragmented data, logic, and reporting to trusted, reusable, AI-ready infrastructure.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ── WHAT I REVIEW / WHAT YOU GET / VALUE ─────────────────── */}
-        <section id="scope" className="py-16 px-6 bg-gradient-to-b from-slate-50 to-white">
+        <section id="scope" className="py-16 px-6 bg-slate-50">
           <div className="mx-auto max-w-6xl">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
@@ -254,39 +276,17 @@ export default function Assessment() {
                 </div>
               </div>
 
-              {/* Value to Your Organization */}
+              {/* Business Value */}
               <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm shadow-slate-100/80 overflow-hidden">
                 <div className="px-7 pt-6 pb-3 border-b border-slate-100">
                   <p className="text-[11px] font-bold tracking-[0.18em] uppercase [color:#807d72] mb-1">Value</p>
-                  <h3 className="font-semibold text-[15px] [color:#26251e]">Value to Your Organization</h3>
+                  <h3 className="font-semibold text-[15px] [color:#26251e]">Business Value</h3>
                 </div>
                 <div className="px-7 py-5">
                   <BulletList items={valueToOrg} />
                 </div>
               </div>
 
-            </div>
-          </div>
-        </section>
-
-        {/* ── THE OUTCOME ───────────────────────────────────────────── */}
-        <section id="outcome" className="py-16 px-6 bg-slate-50">
-          <div className="mx-auto max-w-4xl">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-bold tracking-[0.2em] uppercase [color:#807d72]">
-                The Outcome
-              </span>
-              <span className="w-8 h-px bg-slate-200" />
-            </div>
-            {/* Outcome card — green gradient matching project cards */}
-            <div className="rounded-2xl border [border-color:#9fc9a2] [background:linear-gradient(to_bottom,#a9d3ac,#9fc9a2)] px-5 py-6 md:px-8 md:py-8 max-w-3xl">
-              <p className="text-[11px] font-bold tracking-[0.12em] uppercase [color:#807d72] mb-3">Leadership gets a clear answer to:</p>
-              <p className="text-xl sm:text-2xl font-bold leading-snug [color:#1f8a65]">
-                &ldquo;What data foundation needs to exist so we can trust our numbers, recreate history, reduce manual work, and build future AI or automation on solid ground?&rdquo;
-              </p>
-              <p className="mt-4 text-[13px] [color:#5a5852] leading-[1.5]">
-                The goal is to identify the first practical layer the business needs to move from fragmented data, logic, and reporting to trusted, reusable, AI-ready infrastructure.
-              </p>
             </div>
           </div>
         </section>
@@ -359,7 +359,7 @@ export default function Assessment() {
               Ready to discuss?
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
-              Book a 30-minute assessment call
+              Know something is off, but not sure what to fix first?
             </h2>
 
             <a
@@ -368,7 +368,7 @@ export default function Assessment() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-slate-900 font-semibold text-sm hover:bg-slate-100 transition-colors"
             >
-              Book Assessment Call
+              Book a 30-Minute Assessment Call
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
