@@ -19,7 +19,9 @@ export default function ProjectCard({ project, isMiddle = false }: { project: Pr
     return (
       <div className="rounded-2xl border border-slate-200/70 overflow-hidden shadow-sm shadow-slate-100/80 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-200/60 hover:border-slate-200 transition-all duration-200 bg-white">
         <button
-          className="w-full text-left px-6 pt-5 pb-4 md:px-7 md:pt-6 md:pb-2 md:cursor-default"
+          type="button"
+          aria-expanded={expanded}
+          className="w-full text-left px-6 pt-5 pb-4 md:px-7 md:pt-6 md:pb-2 md:cursor-default touch-manipulation"
           onClick={() => setExpanded(!expanded)}
         >
           <h3 className="font-semibold text-[15px] [color:#26251e]">{project.title}</h3>
@@ -45,24 +47,26 @@ export default function ProjectCard({ project, isMiddle = false }: { project: Pr
       className={`group rounded-2xl border border-slate-200/70 overflow-hidden transition-all duration-200 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-200/60 hover:border-slate-200 md:row-span-4 md:grid md:[grid-template-rows:subgrid] ${isMiddle ? "shadow-md shadow-slate-200/50" : "shadow-sm shadow-slate-100/80"}`}
     >
       {/* Title — always visible */}
-      <div
-        className="px-6 pt-5 pb-4 md:px-7 md:pt-6 md:pb-0 bg-white cursor-pointer md:cursor-default"
+      <button
+        type="button"
+        aria-expanded={expanded}
+        className="block w-full text-left px-6 pt-5 pb-4 md:px-7 md:pt-6 md:pb-0 bg-white cursor-pointer md:cursor-default touch-manipulation"
         onClick={() => setExpanded(!expanded)}
       >
         <h3 className="font-semibold text-[15px] [color:#26251e]">{project.title}</h3>
         <p className="md:hidden mt-1 text-[11px] [color:#807d72]">
           {expanded ? "Show less ↑" : "Click for more ↓"}
         </p>
-      </div>
+      </button>
 
       {/* Context */}
-      <div className={`px-6 md:px-7 pb-0 bg-white ${!expanded ? "hidden md:block" : ""}`}>
+      <div className={`px-6 md:px-7 pt-1 pb-4 md:pt-0 md:pb-0 bg-white ${!expanded ? "hidden md:block" : ""}`}>
         <p className="text-[11px] font-bold tracking-[0.18em] uppercase [color:#807d72] mb-1">Context</p>
         <p className="text-[13px] [color:#807d72] leading-[1.5]">{project.context}</p>
       </div>
 
       {/* Solution */}
-      <div className={`px-6 md:px-7 pb-0 bg-white border-t border-slate-100 ${!expanded ? "hidden md:block" : ""}`}>
+      <div className={`px-6 md:px-7 pt-4 pb-4 md:pt-0 md:pb-0 bg-white border-t border-slate-100 ${!expanded ? "hidden md:block" : ""}`}>
         <p className="text-[11px] font-bold tracking-[0.18em] uppercase [color:#807d72] mb-1">Solution</p>
         <p className="text-[13px] [color:#5a5852] leading-[1.5]">{project.solution}</p>
       </div>
