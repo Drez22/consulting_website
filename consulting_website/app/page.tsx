@@ -103,7 +103,7 @@ export default function Home() {
           variant="banner"
           label="Fixed-Scope Offer"
           headline="Not sure where to start?"
-          body="The Data Foundation Assessment identifies where your data, reporting logic, and infrastructure are breaking down — and what to build first."
+          body="The Data Foundation Assessment identifies where your data, business logic, reporting, and workflows are breaking down, and what to build first."
         />
         {/* ── SERVICES OVERVIEW ─────────────────────────────────────── */}
         <section id="services" className="py-16 md:py-24 px-6 bg-slate-50">
