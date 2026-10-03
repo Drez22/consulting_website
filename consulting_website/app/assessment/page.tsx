@@ -103,7 +103,7 @@ export default function Assessment() {
               Not sure what needs to be built first? Start here.
             </p>
             <p className="text-[15px] sm:text-base [color:#26251e] leading-relaxed mb-3 max-w-2xl">
-              For organizations that know something is wrong with their data and reporting &mdash; but do not yet know what needs to be fixed.
+              For organizations that know something is wrong with their data and reporting, but do not yet know what needs to be fixed.
             </p>
             <p className="text-[15px] [color:#5a5852] leading-relaxed mb-8 max-w-2xl">
               <em>Built from hands-on work untangling reporting logic across dashboards, SQL, spreadsheets, source systems, and undocumented workflows.</em>
@@ -143,7 +143,7 @@ export default function Assessment() {
                 Most organizations do not start with a clear diagnosis. They feel the symptoms: dashboards do not reconcile, historical numbers are hard to recreate, KPI definitions change across teams, and important business logic lives in BI tools, spreadsheets, SQL queries, or someone&apos;s head.
               </p>
               <p className="text-[15px] [color:#5a5852] leading-relaxed">
-                Then leadership asks for AI or automation &mdash; but neither can fix a data foundation the business does not trust.
+                Then leadership asks for AI or automation - but neither can fix a data foundation the business does not trust.
               </p>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function Assessment() {
                 The <strong>Data Foundation Assessment</strong> identifies where your data, business logic, and reporting are breaking down, what risks that creates, and what should be built first.
               </p>
               <p className="text-[15px] [color:#5a5852] leading-relaxed">
-                This is a diagnostic of how data moves through the business today &mdash; from source systems and business logic through reporting, manual workflows, and downstream automation.
+                This is a diagnostic of how data moves through the business today, from source systems and business logic through reporting, manual workflows, and downstream automation.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-2">
@@ -185,7 +185,7 @@ export default function Assessment() {
         </section>
 
         {/* ── YOU DO NOT NEED TO KNOW THE ANSWER ────────────────────── */}
-        <section className="py-16 px-6 bg-slate-50">
+        <section className="pt-16 pb-10 px-6 bg-slate-50">
           <div className="mx-auto max-w-4xl">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-bold tracking-[0.2em] uppercase [color:#807d72]">
@@ -228,7 +228,7 @@ export default function Assessment() {
         </section>
 
         {/* ── THE OUTCOME ───────────────────────────────────────────── */}
-        <section id="outcome" className="py-16 px-6 bg-gradient-to-b from-slate-50 to-white">
+        <section id="outcome" className="pt-10 pb-16 px-6 bg-gradient-to-b from-slate-50 to-white">
           <div className="mx-auto max-w-4xl">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-bold tracking-[0.2em] uppercase [color:#807d72]">
@@ -347,7 +347,7 @@ export default function Assessment() {
               ))}
             </div>
             <p className="mt-6 text-[13px] [color:#5a5852] leading-[1.5] max-w-3xl">
-              The assessment stands on its own. If you want help building the recommended foundation, implementation options are part of the readout &mdash; no obligation.
+              The assessment stands on its own. If you want help building the recommended foundation, implementation options are part of the readout, no obligation.
             </p>
           </div>
         </section>
