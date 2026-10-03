@@ -112,9 +112,9 @@ export default function Home() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
                 {
-                  title: "NPV Decision Platform",
-                  body: "Model complex portfolio outcomes in seconds.",
-                  sub: "Evaluate recovery strategies, compare scenarios, and make faster asset-level decisions from one centralized platform.",
+                  title: "NPV Scenario Decision Platform",
+                  body: "Compare complex scenarios and make faster capital decisions.",
+                  sub: "Model outcomes across multiple strategies, assumptions, and timelines in one centralized platform.",
                 },
                 {
                   title: "Lead Generation Engine",
@@ -327,7 +327,7 @@ export default function Home() {
           </div>
           <nav className="flex items-center gap-6">
             {[
-              ["Services", "#services"],
+              ["How I Create Value", "#services"],
               ["Process", "#process"],
               ["Contact", "#contact"],
             ].map(([label, href]) => (
