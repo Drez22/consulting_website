@@ -266,7 +266,7 @@ export default function Assessment() {
               </div>
 
               {/* What You Get */}
-              <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm shadow-slate-100/80 overflow-hidden">
+              <div id="deliverables" className="scroll-mt-24 rounded-2xl border border-slate-200/70 bg-white shadow-sm shadow-slate-100/80 overflow-hidden">
                 <div className="px-7 pt-6 pb-3 border-b border-slate-100">
                   <p className="text-[11px] font-bold tracking-[0.18em] uppercase [color:#807d72] mb-1">Deliverables</p>
                   <h3 className="font-semibold text-[15px] [color:#26251e]">What You Get</h3>
