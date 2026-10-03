@@ -220,7 +220,7 @@ export default function Home() {
                 {
                   n: "01",
                   title: "Discovery Call",
-                  body: "A 30–60 minute conversation to understand your goals, current systems, and where better data or automation could unlock leverage.",
+                  body: "A 60 minute conversation to understand your goals, current systems, and where better data or automation could unlock leverage.",
                 },
                 {
                   n: "02",
