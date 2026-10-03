@@ -295,7 +295,7 @@ export default function Home() {
               )}
             </div>
             <p className="mt-5 text-xs text-slate-600">
-              I typically respond within two businesses days.
+              I typically respond within two business days.
             </p>
           </div>
         </section>
