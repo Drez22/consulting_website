@@ -190,7 +190,7 @@ function VerticalSection({ vertical }: { vertical: Vertical }) {
         {/* grid-template-rows defines 4 shared tracks: title / context / solution / outcome.
             Cards use row-span-4 + subgrid so every row aligns across columns. */}
         <div
-          className={`grid gap-x-5 gap-y-5 [grid-template-rows:auto_1fr_1fr_auto] ${
+          className={`grid gap-x-5 gap-y-5 items-start md:items-stretch md:[grid-template-rows:auto_1fr_1fr_auto] ${
             isThree
               ? "sm:grid-cols-2 lg:grid-cols-3"
               : vertical.projects.length === 1
