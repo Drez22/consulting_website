@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 const linkedInIcon = (
@@ -16,9 +18,9 @@ export default function Navbar() {
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         {/* Left: logo + LinkedIn */}
         <div className="flex items-center gap-3">
-          <a href="/" className="font-semibold tracking-tight text-base text-white md:text-slate-900 hover:text-slate-300 md:hover:text-slate-600 transition-colors">
+          <Link href="/" className="font-semibold tracking-tight text-base text-white md:text-slate-900 hover:text-slate-300 md:hover:text-slate-600 transition-colors">
             Drezdan Analytics LLC
-          </a>
+          </Link>
           <a
             href="https://www.linkedin.com/in/drezdan-dale/"
             target="_blank"
@@ -38,7 +40,7 @@ export default function Navbar() {
           >
             How I Create Value
           </a>
-          {[["Data Foundation Assessment", "/assessment"], ["How I Work", "/#process"], ["Contact", "/#contact"]].map(([label, href]) => (
+          {[["How I Work", "/#process"], ["Contact", "/#contact"]].map(([label, href]) => (
             <a
               key={label}
               href={href}
@@ -73,10 +75,9 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[#0a1628] border-t border-slate-700 px-6 py-5 flex flex-col gap-4">
+        <div className="md:hidden bg-[#0a1628] border-t border-slate-700 px-6 py-5 flex flex-col gap-1">
           {[
             ["How I Create Value", "/projects"],
-            ["Data Foundation Assessment", "/assessment"],
             ["How I Work", "/#process"],
             ["Contact", "/#contact"],
           ].map(([label, href]) => (
@@ -84,7 +85,7 @@ export default function Navbar() {
               key={label}
               href={href}
               onClick={() => setOpen(false)}
-              className={`text-sm text-slate-300 hover:text-white transition-colors${label === "How I Create Value" ? " underline underline-offset-4" : ""}`}
+              className={`py-2.5 text-sm text-slate-300 hover:text-white transition-colors${label === "How I Create Value" ? " underline underline-offset-4" : ""}`}
             >
               {label}
             </a>

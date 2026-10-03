@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 const linkedInIcon = (
@@ -15,9 +17,9 @@ export default function LandingNavbar() {
     <header className="fixed top-0 inset-x-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <a href="/" className="font-semibold tracking-tight text-base hover:text-slate-600 transition-colors">
+          <Link href="/" className="font-semibold tracking-tight text-base hover:text-slate-600 transition-colors">
             Drezdan Analytics LLC
-          </a>
+          </Link>
           <a
             href="https://www.linkedin.com/in/drezdan-dale/"
             target="_blank"
@@ -31,7 +33,7 @@ export default function LandingNavbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
-          {[["Problem", "#problem"], ["Scope", "#scope"], ["Outcome", "#outcome"], ["Structure", "#structure"]].map(([label, href]) => (
+          {[["Problem", "#problem"], ["What You Get", "#deliverables"], ["Scope", "#structure"]].map(([label, href]) => (
             <a
               key={label}
               href={href}
@@ -66,18 +68,17 @@ export default function LandingNavbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-slate-100 px-6 py-5 flex flex-col gap-4">
+        <div className="md:hidden bg-white border-t border-slate-100 px-6 py-5 flex flex-col gap-1">
           {[
             ["Problem", "#problem"],
-            ["Scope", "#scope"],
-            ["Outcome", "#outcome"],
-            ["Structure", "#structure"],
+            ["What You Get", "#deliverables"],
+            ["Scope", "#structure"],
           ].map(([label, href]) => (
             <a
               key={label}
               href={href}
               onClick={() => setOpen(false)}
-              className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+              className="py-2.5 text-sm text-slate-600 hover:text-slate-900 transition-colors"
             >
               {label}
             </a>

@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import ProjectCard from "./ProjectCard";
+import AssessmentCallout from "../components/AssessmentCallout";
 
 export const metadata = {
   title: "How I Create Value — Drezdan Analytics LLC",
@@ -31,12 +32,46 @@ type Vertical = {
 
 const verticals: Vertical[] = [
   {
-    id: "data-analytics",
+    id: "product-development",
     number: "01",
-    name: "Data Analytics",
+    name: "Decision Systems & Custom Products",
+    taglineLabel: "You need me when...",
+    tagline: "Your team needs internal tooling | AI could automate complex work | Data is unstructured and unusable",
+    sectionBg: "bg-slate-50",
+    skills: ["Next.js", "React", "Sanity", "Vercel", "Supabase", "Claude Code"],
+    projects: [
+      {
+        title: "Real Estate Portfolio Platform",
+        context: "Real estate owner lacked a centralized, professional platform to showcase properties, capture leads, and manage listings dynamically.",
+        solution: "Built a fully responsive property portfolio platform with CMS integration, interactive maps, listing pages, and lead capture functionality. Designed for easy client ownership and scalability.",
+        metric: "View the Live Platform",
+        outcome: "",
+        link: "https://rent-quade-jet.vercel.app/",
+      },
+      {
+        title: "Relationship Mapping Web App",
+        context: "Professionals lacked a clear way to visualize and leverage their network connections for opportunities, introductions, and relationship management.",
+        solution: "Built an interactive web application that maps relationships into a visual tree structure, enabling users to explore connections, identify pathways, and better leverage their network.",
+        metric: "View the Live App",
+        outcome: "",
+        link: "https://connections-tree-web-app.vercel.app/landing_page",
+      },
+      {
+        title: "NPV Scenario Decision Platform",
+        context: "A capital-intensive business relied on institutional knowledge and manual judgment to evaluate portfolio scenarios, with no standardized modeling framework in place.",
+        solution: "Worked with stakeholders to define the underlying decision logic and financial formulas, translated that framework into a structured Excel model, then built a centralized application to automate scenario modeling across strategies, assumptions, and timelines.",
+        metric: "Scenario analysis in seconds, not hours",
+        outcome: "",
+      },
+    ],
+  },
+  {
+    id: "data-analytics",
+    number: "02",
+    name: "Data Analytics & Architecture",
     taglineLabel: "You need me when...",
     tagline: "Data infrastructure is a nightmare | Dashboards are a mess | Insights are scattered | Forecasting is unreliable",
-    sectionBg: "bg-slate-50",
+    sectionBg: "bg-gradient-to-b from-slate-50 to-white",
     skills: ["R", "Python", "SQL", "PowerBI", "Tableau", "Sigma"],
     projects: [
       {
@@ -54,21 +89,21 @@ const verticals: Vertical[] = [
         outcome: "Enabled targeted pricing strategies instead of broad, one-size-fits-all changes.",
       },
       {
-        title: "Predictive Deal Closing Model",
-        context: "A real estate lending company needed a reliable way to forecast month-end loan closings, but deal timelines were constantly shifting and projections varied widely across reps, borrowers, and deal stages.",
-        solution: "Built a dynamic forecasting model incorporating borrower behavior, sales rep patterns, deal stage progression, and changing close dates. Updated in real time as pipeline data evolved.",
-        metric: "±3% Forecast Accuracy",
-        outcome: "Leadership gained a reliable view of month-end performance as predictions consistently landed within ±3% of actual closing volume.",
+        title: "Data Architecture & BI Modernization",
+        context: "Critical KPIs were calculated independently across dashboards and reporting processes, creating inconsistent definitions and duplicated logic.",
+        solution: "Built a centralized metric layer and automated data pipeline that standardizes business logic and stores historical KPI snapshots for downstream reporting and analysis.",
+        metric: "One governed source for business-critical metrics",
+        outcome: "",
       },
     ],
   },
   {
     id: "automation",
-    number: "02",
+    number: "03",
     name: "Automation",
     taglineLabel: "You need me when...",
     tagline: "Manual work is eating your team's time | Leads take too long to find | Your workflows aren't connected | Reporting takes too long",
-    sectionBg: "bg-gradient-to-b from-slate-50 to-white",
+    sectionBg: "bg-slate-50",
     skills: ["Python", "APIs", "Claude", "Codex", "HubSpot"],
     projects: [
       {
@@ -95,33 +130,6 @@ const verticals: Vertical[] = [
     ],
   },
   {
-    id: "product-development",
-    number: "03",
-    name: "Custom Product Builds",
-    taglineLabel: "You need me when...",
-    tagline: "Your team needs internal tooling | AI could automate complex work | Data is unstructured and unusable",
-    sectionBg: "bg-slate-50",
-    skills: ["Next.js", "React", "Sanity", "Vercel", "Supabase", "Claude Code"],
-    projects: [
-      {
-        title: "Real Estate Portfolio Platform",
-        context: "Real estate owner lacked a centralized, professional platform to showcase properties, capture leads, and manage listings dynamically.",
-        solution: "Built a fully responsive property portfolio platform with CMS integration, interactive maps, listing pages, and lead capture functionality. Designed for easy client ownership and scalability.",
-        metric: "View the Live Platform",
-        outcome: "",
-        link: "https://rent-quade-jet.vercel.app/",
-      },
-      {
-        title: "Relationship Mapping Web App",
-        context: "Professionals lacked a clear way to visualize and leverage their network connections for opportunities, introductions, and relationship management.",
-        solution: "Built an interactive web application that maps relationships into a visual tree structure, enabling users to explore connections, identify pathways, and better leverage their network.",
-        metric: "View the Live App",
-        outcome: "",
-        link: "https://connections-tree-web-app.vercel.app/landing_page",
-      },
-    ],
-  },
-  {
     id: "soft-skills",
     number: "04",
     name: "Translating Complexity",
@@ -130,16 +138,16 @@ const verticals: Vertical[] = [
     skills: [],
     projects: [
       {
-        title: "Turn technical work into business decisions",
+        title: "Turn technical complexity into business decisions",
         context: "",
         solution: "",
         metric: "",
         outcome: "",
         bullets: [
-          "Present complex data and system outputs in a way leadership can immediately act on",
-          "Drive alignment between technical work and business strategy",
-          "Communicate clearly with non-technical stakeholders to ensure adoption",
-          "Comfortable presenting to large groups (40+), connecting analytics directly to growth",
+          "Translate complex systems and analysis into clear executive actions",
+          "Connect technical architecture directly to business objectives",
+          "Align technical and non-technical stakeholders around one solution",
+          "Present complex work clearly to leadership and large groups",
         ],
       },
     ],
@@ -230,7 +238,7 @@ export default function Projects() {
               How I Create Value
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-5">
-              A skillset that drives outcomes
+              Systems that turn complexity into leverage
             </h1>
             <p className="mx-auto max-w-xl text-base sm:text-lg [color:#5a5852] leading-relaxed">
               I combine data analytics, automation, product development, and the ability to translate complexity to build systems that surface insights and create compounding returns.
@@ -253,6 +261,13 @@ export default function Projects() {
         {verticals.map((vertical) => (
           <VerticalSection key={vertical.id} vertical={vertical} />
         ))}
+
+        {/* ── ASSESSMENT CALLOUT ────────────────────────────────────── */}
+        <AssessmentCallout
+          variant="compact"
+          headline="Not sure which system needs attention first?"
+          body="The Data Foundation Assessment provides a focused diagnostic of your data, reporting, business logic, and AI-readiness — with a clear recommendation on what to build first."
+        />
 
         {/* ── CTA ───────────────────────────────────────────────────── */}
         <section className="py-16 md:py-20 px-6 bg-slate-950">
@@ -279,7 +294,7 @@ export default function Projects() {
         <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-white text-sm font-semibold tracking-tight">Drezdan Analytics LLC</span>
           <nav className="flex items-center gap-6">
-            {[["Services", "/#services"], ["Process", "/#process"], ["Contact", "/#contact"]].map(([label, href]) => (
+            {[["How I Create Value", "/#services"], ["Process", "/#process"], ["Contact", "/#contact"]].map(([label, href]) => (
               <a key={label} href={href} className="text-xs text-slate-600 hover:text-slate-300 transition-colors">
                 {label}
               </a>

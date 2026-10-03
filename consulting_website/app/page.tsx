@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import AssessmentCallout from "./components/AssessmentCallout";
 
 export default function Home() {
   const [copied, setCopied] = useState(false);
@@ -20,7 +21,7 @@ export default function Home() {
         <section className="py-20 md:py-32 px-6 bg-gradient-to-b from-slate-50 to-white">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-5 text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
-              Data, Systems, & Automation Consultant
+              Data, Systems, & AI Consultant
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-6">
               Clarity from data.
@@ -28,8 +29,8 @@ export default function Home() {
               Growth from systems.
             </h1>
             <p className="mx-auto max-w-xl text-lg text-slate-500 leading-relaxed mb-10">
-              I help companies turn fragmented data and broken processes into
-              cleaner infrastructure, sharper insights, and revenue that compounds.
+              I turn messy business processes into scalable systems, combining data,
+              software, and automation from strategy through implementation.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <a
@@ -42,7 +43,7 @@ export default function Home() {
                 href="#services"
                 className="px-8 py-3.5 rounded-xl border border-slate-200 text-slate-700 text-sm font-medium hover:border-slate-400 transition-colors"
               >
-                View Services
+                How I Create Value
               </a>
             </div>
           </div>
@@ -97,24 +98,31 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* ── ASSESSMENT CALLOUT ────────────────────────────────────── */}
+        <AssessmentCallout
+          variant="banner"
+          label="Fixed-Scope Offer"
+          headline="Not sure where to start?"
+          body="The Data Foundation Assessment identifies where your data, business logic, reporting, and workflows are breaking down, and what to build first."
+        />
         {/* ── SERVICES OVERVIEW ─────────────────────────────────────── */}
         <section id="services" className="py-16 md:py-24 px-6 bg-slate-50">
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
-              Services
+              How I Create Value
             </p>
             <h2 className="mb-4 text-3xl sm:text-4xl font-bold leading-tight max-w-lg">
               Systems I Build
             </h2>
             <p className="mb-14 text-slate-500 leading-relaxed max-w-xl">
-              I help companies design, build, and operationalize systems that power smarter decisions and scalable revenue.
+              I design and build data products, decision systems, and automations that turn complex business processes into scalable infrastructure.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
                 {
-                  title: "Predictive Deal Closing Model",
-                  body: "Know what will close before the month ends.",
-                  sub: "Predict deal outcomes with high accuracy using live pipeline data.",
+                  title: "NPV Scenario Decision Platform",
+                  body: "Compare complex scenarios and make faster capital decisions.",
+                  sub: "Model outcomes across multiple strategies, assumptions, and timelines in one centralized platform.",
                 },
                 {
                   title: "Lead Generation Engine",
@@ -122,9 +130,9 @@ export default function Home() {
                   sub: "Eliminate noise and focus only on A-tier leads worth pursuing.",
                 },
                 {
-                  title: "Real Estate Portfolio Platform",
-                  body: "Turn property portfolios into lead-generating platforms.",
-                  sub: "Capture demand, showcase listings, and own your digital presence.",
+                  title: "Data Architecture & BI Modernization",
+                  body: "Build a data foundation the business can actually trust.",
+                  sub: "Modernize reporting infrastructure, centralize business logic, and create scalable data models that power consistent analytics.",
                 },
               ].map((s) => (
                 <a
@@ -220,7 +228,7 @@ export default function Home() {
                 {
                   n: "01",
                   title: "Discovery Call",
-                  body: "A 30–60 minute conversation to understand your goals, current systems, and where better data or automation could unlock leverage.",
+                  body: "A 60 minute conversation to understand your goals, current systems, and where better data or automation could unlock leverage.",
                 },
                 {
                   n: "02",
@@ -295,7 +303,7 @@ export default function Home() {
               )}
             </div>
             <p className="mt-5 text-xs text-slate-600">
-              I typically respond within two businesses days.
+              I typically respond within two business days.
             </p>
           </div>
         </section>
@@ -327,7 +335,7 @@ export default function Home() {
           </div>
           <nav className="flex items-center gap-6">
             {[
-              ["Services", "#services"],
+              ["How I Create Value", "#services"],
               ["Process", "#process"],
               ["Contact", "#contact"],
             ].map(([label, href]) => (
