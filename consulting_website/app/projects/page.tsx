@@ -121,8 +121,8 @@ const verticals: Vertical[] = [
       },
       {
         title: "NPV Scenario Decision Platform",
-        context: "A capital-intensive business relied on spreadsheet-based scenario modeling that became increasingly slow and difficult to scale as portfolio complexity grew.",
-        solution: "Designed and implemented a centralized decision platform that models multiple strategies, assumptions, and timelines across a portfolio, allowing users to compare outcomes and evaluate scenarios in seconds.",
+        context: "A capital-intensive business relied on institutional knowledge and manual judgment to evaluate portfolio scenarios, with no standardized modeling framework in place.",
+        solution: "Worked with stakeholders to define the underlying decision logic and financial formulas, translated that framework into a structured Excel model, then built a centralized application to automate scenario modeling across strategies, assumptions, and timelines.",
         metric: "Scenario analysis in seconds, not hours",
         outcome: "",
       },
