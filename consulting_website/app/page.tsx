@@ -20,7 +20,7 @@ export default function Home() {
         <section className="py-20 md:py-32 px-6 bg-gradient-to-b from-slate-50 to-white">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-5 text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">
-              Data, Systems, & Automation Operator
+              Data, Systems, & AI Consultant
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-6">
               Clarity from data.
@@ -28,8 +28,8 @@ export default function Home() {
               Growth from systems.
             </h1>
             <p className="mx-auto max-w-xl text-lg text-slate-500 leading-relaxed mb-10">
-              I help companies turn fragmented data and broken processes into
-              cleaner infrastructure, sharper insights, and revenue that compounds.
+              I turn messy business processes into scalable systems, combining data,
+              software, and automation from strategy through implementation.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <a
