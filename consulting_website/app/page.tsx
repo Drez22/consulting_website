@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import AssessmentCallout from "./components/AssessmentCallout";
 
 export default function Home() {
   const [copied, setCopied] = useState(false);
@@ -97,6 +98,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* ── ASSESSMENT CALLOUT ────────────────────────────────────── */}
+        <AssessmentCallout
+          variant="banner"
+          label="Fixed-Scope Offer"
+          headline="Not sure where to start?"
+          body="The Data Foundation Assessment identifies where your data, reporting logic, and infrastructure are breaking down — and what to build first."
+        />
         {/* ── SERVICES OVERVIEW ─────────────────────────────────────── */}
         <section id="services" className="py-16 md:py-24 px-6 bg-slate-50">
           <div className="mx-auto max-w-6xl">

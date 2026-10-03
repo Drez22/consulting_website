@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import ProjectCard from "./ProjectCard";
+import AssessmentCallout from "../components/AssessmentCallout";
 
 export const metadata = {
   title: "How I Create Value — Drezdan Analytics LLC",
@@ -260,6 +261,13 @@ export default function Projects() {
         {verticals.map((vertical) => (
           <VerticalSection key={vertical.id} vertical={vertical} />
         ))}
+
+        {/* ── ASSESSMENT CALLOUT ────────────────────────────────────── */}
+        <AssessmentCallout
+          variant="compact"
+          headline="Not sure which system needs attention first?"
+          body="The Data Foundation Assessment provides a focused diagnostic of your data, reporting, business logic, and AI-readiness — with a clear recommendation on what to build first."
+        />
 
         {/* ── CTA ───────────────────────────────────────────────────── */}
         <section className="py-16 md:py-20 px-6 bg-slate-950">
