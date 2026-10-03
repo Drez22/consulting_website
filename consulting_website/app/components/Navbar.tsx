@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 const linkedInIcon = (
@@ -16,9 +18,9 @@ export default function Navbar() {
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         {/* Left: logo + LinkedIn */}
         <div className="flex items-center gap-3">
-          <a href="/" className="font-semibold tracking-tight text-base text-white md:text-slate-900 hover:text-slate-300 md:hover:text-slate-600 transition-colors">
+          <Link href="/" className="font-semibold tracking-tight text-base text-white md:text-slate-900 hover:text-slate-300 md:hover:text-slate-600 transition-colors">
             Drezdan Analytics LLC
-          </a>
+          </Link>
           <a
             href="https://www.linkedin.com/in/drezdan-dale/"
             target="_blank"
