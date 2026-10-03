@@ -137,16 +137,16 @@ const verticals: Vertical[] = [
     skills: [],
     projects: [
       {
-        title: "Turn technical work into business decisions",
+        title: "Turn technical complexity into business decisions",
         context: "",
         solution: "",
         metric: "",
         outcome: "",
         bullets: [
-          "Present complex data and system outputs in a way leadership can immediately act on",
-          "Drive alignment between technical work and business strategy",
-          "Communicate clearly with non-technical stakeholders to ensure adoption",
-          "Comfortable presenting to large groups (40+), connecting analytics directly to growth",
+          "Translate complex systems and analysis into clear executive actions",
+          "Connect technical architecture directly to business objectives",
+          "Align technical and non-technical stakeholders around one solution",
+          "Present complex work clearly to leadership and large groups",
         ],
       },
     ],
@@ -237,7 +237,7 @@ export default function Projects() {
               How I Create Value
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-5">
-              A skillset that drives outcomes
+              Systems that turn complexity into leverage
             </h1>
             <p className="mx-auto max-w-xl text-base sm:text-lg [color:#5a5852] leading-relaxed">
               I combine data analytics, automation, product development, and the ability to translate complexity to build systems that surface insights and create compounding returns.
