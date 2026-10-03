@@ -75,7 +75,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[#0a1628] border-t border-slate-700 px-6 py-5 flex flex-col gap-4">
+        <div className="md:hidden bg-[#0a1628] border-t border-slate-700 px-6 py-5 flex flex-col gap-1">
           {[
             ["How I Create Value", "/projects"],
             ["How I Work", "/#process"],
@@ -85,7 +85,7 @@ export default function Navbar() {
               key={label}
               href={href}
               onClick={() => setOpen(false)}
-              className={`text-sm text-slate-300 hover:text-white transition-colors${label === "How I Create Value" ? " underline underline-offset-4" : ""}`}
+              className={`py-2.5 text-sm text-slate-300 hover:text-white transition-colors${label === "How I Create Value" ? " underline underline-offset-4" : ""}`}
             >
               {label}
             </a>

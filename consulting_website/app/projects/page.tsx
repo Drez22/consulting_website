@@ -294,7 +294,7 @@ export default function Projects() {
         <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-white text-sm font-semibold tracking-tight">Drezdan Analytics LLC</span>
           <nav className="flex items-center gap-6">
-            {[["Services", "/#services"], ["Process", "/#process"], ["Contact", "/#contact"]].map(([label, href]) => (
+            {[["How I Create Value", "/#services"], ["Process", "/#process"], ["Contact", "/#contact"]].map(([label, href]) => (
               <a key={label} href={href} className="text-xs text-slate-600 hover:text-slate-300 transition-colors">
                 {label}
               </a>

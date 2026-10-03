@@ -68,7 +68,7 @@ export default function LandingNavbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-slate-100 px-6 py-5 flex flex-col gap-4">
+        <div className="md:hidden bg-white border-t border-slate-100 px-6 py-5 flex flex-col gap-1">
           {[
             ["Problem", "#problem"],
             ["What You Get", "#deliverables"],
@@ -78,7 +78,7 @@ export default function LandingNavbar() {
               key={label}
               href={href}
               onClick={() => setOpen(false)}
-              className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+              className="py-2.5 text-sm text-slate-600 hover:text-slate-900 transition-colors"
             >
               {label}
             </a>
