@@ -197,7 +197,7 @@ export default function Assessment() {
               You do not need to know what to build.
             </h2>
             <p className="text-[15px] [color:#5a5852] leading-relaxed max-w-2xl mb-8">
-              The assessment exists to determine what actually needs to be built first &mdash; so you do not have to guess.
+              The assessment exists to determine what actually needs to be built first, so you do not have to guess.
             </p>
             <div className="grid sm:grid-cols-2 gap-5">
               <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm shadow-slate-100/80 overflow-hidden">
