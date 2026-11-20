@@ -40,7 +40,7 @@ export default function Navbar() {
           >
             How I Create Value
           </a>
-          {[["Events", "/events"], ["How I Work", "/#process"], ["Contact", "/#contact"]].map(([label, href]) => (
+          {[["How I Work", "/#process"], ["Contact", "/#contact"], ["Events", "/events"]].map(([label, href]) => (
             <a
               key={label}
               href={href}
@@ -78,9 +78,9 @@ export default function Navbar() {
         <div className="md:hidden bg-[#0a1628] border-t border-slate-700 px-6 py-5 flex flex-col gap-1">
           {[
             ["How I Create Value", "/projects"],
-            ["Events", "/events"],
             ["How I Work", "/#process"],
             ["Contact", "/#contact"],
+            ["Events", "/events"],
           ].map(([label, href]) => (
             <a
               key={label}
