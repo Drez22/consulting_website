@@ -80,7 +80,7 @@ export default function Events() {
             ) : (
               <>
                 <Group label="Upcoming" items={upcoming} />
-                <Group label="Past" items={past} />
+                <Group label="Presented" items={past} />
               </>
             )}
           </div>
