@@ -84,7 +84,7 @@ export const events: EventItem[] = [
     date: "2026-11-20",
     venue: "Virtual Meeting",
     summary: "Guest speaking event for Dr. Banerjee's 400 level data course",
-    draft: true,
+    draft: false,
     slides: [
       { kind: "title", title: "JCU Data Guest Speaker Event", subtitle: "Drezdan Dale · Drezdan Analytics LLC", photo: { src: "/drez-title.jpg", alt: "Drezdan Dale" } },
       {
