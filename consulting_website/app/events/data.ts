@@ -486,30 +486,6 @@ export const events: EventItem[] = [
         columns: 3,
         cards: ["Data Analyst", "Data Engineer", "Data Science", "Fractional AI Owner", "Fractional Data Owner"],
       },
-      {
-        kind: "cards",
-        tag: "Drezdan Analytics LLC #3",
-        title: "Projects",
-        columns: 2,
-        cards: [
-          {
-            title: "NPL Scenario Platform",
-            body: "Full application with automated scenario modeling across dynamic strategies, assumptions, and timelines",
-          },
-          {
-            title: "Servicing Date Down Automation",
-            body: "Built AI workflow that retrieves emails, processes documents, stores data points, and sends a response back to sender, saving the business a FT hire",
-          },
-          {
-            title: "Daily Metric Store",
-            body: "Built a centralized metric layer and automated data pipeline, storing historical KPI snapshots for downstream reporting and analysis",
-          },
-          {
-            title: "Lead Gen Engine",
-            body: "Built an automated pipeline that aggregates lead data, enriches eligibility, and scores relevance using embeddings + LLM classification",
-          },
-        ],
-      },
       { kind: "section", title: "Entrepreneurship" },
       {
         kind: "timeline",
@@ -533,19 +509,6 @@ export const events: EventItem[] = [
           { label: "There is pressure", text: "and I love it. I can see the growth. Pressure leads to growth." },
           { label: "I feel aligned", text: "Working 9-5, I felt trapped. Now I have the most energy and passion I have ever had" },
           { label: "Control of Work", text: "My schedule, my environment, my rules" },
-        ],
-      },
-      {
-        kind: "timeline",
-        tag: "Entrepreneurship #3",
-        title: "Where I want to go next",
-        rows: [
-          { label: "Keep this business running", text: "Keep this going strong while continuing to raise prices & reduce my hours" },
-          {
-            label: "Sort through ideas",
-            text: "Have several ideas, still figuring out which one is worth pursuing and which one I feel most aligned to",
-          },
-          { label: "Begin building an actual company", text: "Mentor & I will form partnership and sprint together" },
         ],
       },
       { kind: "section", title: "Advice" },
